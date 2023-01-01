@@ -1,6 +1,3 @@
-# Zaen [@TeleUdahRusak
-# Don't remove credits ⚠️
-
 import os
 import sys
 from pyrogram import Client, filters
@@ -12,13 +9,11 @@ from config import HNDLR, SUDO_USERS
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
-<b>👋 Hallo {m.from_user.mention}!
-
-🛠 MENU BANTUAN MUSIC PLAYER
+<b>🛠 MENU BANTUAN MUSIC PLAYER
 
 ⚡ PERINTAH UNTUK SEMUA ORANG
 • {HNDLR}play [judul lagu | link youtube | balas file audio] - untuk memutar lagu
-• {HNDLR}videoplay [judul video | link youtube | balas file video] - untuk memutar video
+• {HNDLR}vplay [judul video | link youtube | balas file video] - untuk memutar video
 • {HNDLR}playlist untuk melihat daftar putar
 • {HNDLR}ping - untuk cek status
 • {HNDLR}id - untuk melihat id pengguna
